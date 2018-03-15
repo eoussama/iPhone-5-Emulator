@@ -24,13 +24,34 @@
                     <div class="input"></div>
                     <div class="output"></div>
                     <div class="screenLock">
+						<div class="header">
+							<div class="signalBar">
+								<div class="signalDot filled"></div>
+								<div class="signalDot filled"></div>
+								<div class="signalDot filled"></div>
+								<div class="signalDot"></div>
+								<div class="signalDot"></div>
+							</div>
+							<div class="simCard">
+								<span>Orange 4G</span>
+							</div>
+							<div class="batteryBar">
+								<span>81%</span>
+								<i class="fas fa-battery-three-quarters"></i>
+							</div>
+						</div>
                         <div class="lockTime">
 							<span id="lockHour">00:00</span>
 							<span id="lockDate">day_of_week, day_of_month month</span>
 						</div>
+						<div class="footer">
+							<span><i class="fas fa-angle-up"></i> Slide to unlock</span>
+							<i class="fas fa-camera"></i>
+							<div class="slideHandle"></div>
+						</div>
                     </div>
                     <div class="screenOff"></div>
-                    <div class="homeBtn" onclick="switchOn();"></div>
+                    <div class="homeBtn" id="homeBtn" ></div>
                 </div>
             </div>
         </main>

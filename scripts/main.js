@@ -13,7 +13,8 @@ window.addEventListener('load', function() {
 	const 
 		screen = document.querySelector('.iPhone .screenOff'),
 		lockHour = document.getElementById('lockHour'),
-		lockDate = document.getElementById('lockDate');
+		lockDate = document.getElementById('lockDate'),
+		homeBtn = document.getElementById('homeBtn');
 
 	function switchOn() {
 		screen.style.opacity = '0';
@@ -32,4 +33,6 @@ window.addEventListener('load', function() {
 		lockHour.textContent = date.getHours() + ':' + date.getMinutes();
 		lockDate.textContent = `${daysOfWeek[date.getDay()]}, ${date.getDate()} ${monthsNames[date.getMonth()]}`;
 	}, 1000);
+	
+	homeBtn.addEventListener('click', switchOn);
 });
