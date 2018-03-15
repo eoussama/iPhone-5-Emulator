@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="iPhone">
+        <meta name="author" content="Eoussama">
+        <meta name="description" content="Simple iPhone emulator">
+        <meta name="keywords" content="iPhone, Emulator">
+
+		<link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+		
+        <title>iPhone emulator</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="iPhone">
+                <div class="camera"></div>
+                <div class="micBoard">
+                    <div class="input"></div>
+                    <div class="output"></div>
+                    <div class="screenLock">
+                        <div class="lockTime">
+							<span id="lockHour">00:00</span>
+							<span id="lockDate">day_of_week, day_of_month month</span>
+						</div>
+                    </div>
+                    <div class="screenOff"></div>
+                    <div class="homeBtn" onclick="switchOn();"></div>
+                </div>
+            </div>
+        </main>
+        
+        <script type="text/javascript" src="scripts/main.js" ></script>
+    </body>
+</html>
