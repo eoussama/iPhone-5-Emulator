@@ -30,7 +30,7 @@ window.addEventListener('load', function() {
 	timer = setInterval(function () {
 		let date = new Date();
 		
-		lockHour.textContent = date.getHours() + ':' + date.getMinutes();
+		lockHour.textContent = `${date.getHours() < 10 ? '0' + date.getHours() : date.getHours()} : ${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}`;
 		lockDate.textContent = `${daysOfWeek[date.getDay()]}, ${date.getDate()} ${monthsNames[date.getMonth()]}`;
 	}, 1000);
 	
