@@ -1,3 +1,17 @@
+/**
+*
+* @name:       iPhone 5 Emulator
+* @version:    0.1.0
+* @author:     EOussama
+* @license     Apache-2.0
+* @source:     https://github.com/EOussama/iPhone-5-Emulator
+* 
+* The main javascript file of the app.
+*
+*/
+
+"use strict";
+
 const 
 	daysOfWeek = ['Sunday', 'Monday', 'Tuesday, Wednsday', 'Thursday', 'Friday', 'Saturday'],
 	  monthsNames = ["January","February","March","April","May","June","July",
